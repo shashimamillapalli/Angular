@@ -1,0 +1,8 @@
+<div>
+  <h2>{{message | uppercase}}</h2>
+  <h2>{{message | lowercase}}</h2>
+  <h2>{{message | json}}</h2>
+  <h2>{{price | currency: "INR"}}</h2>
+
+  <app-test (childEvent)="message=$event" [parentData]="name"></app-test>
+</div>
